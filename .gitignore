@@ -1,0 +1,9 @@
+.venv*/
+__pycache__/
+*.pyc
+checkpoints/
+data/
+runs/
+collectionandqueries.tar.gz
+.idea/
+.DS_Store

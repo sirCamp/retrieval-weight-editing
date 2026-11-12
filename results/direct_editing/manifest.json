@@ -1,0 +1,137 @@
+{
+  "experiment": "mechanistic_direct_editing_v3",
+  "base_model": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_dimension": 384
+  },
+  "editors": {
+    "astra": "us.openai.gpt-6-astra",
+    "fable": "us.anthropic.claude-fable-5-2"
+  },
+  "source_archive_sha256": "decac356eb8cc5b9cea2e30b8738dc6f367e4147aaefe8fc7526ddda382fd2fc",
+  "collection_sha256": "86e0c5820be6b22280337a67e54cbb626645453d9ac3c377bac45abb81c5653d",
+  "search_corpus_sha256": "4334bde48e97a730731b7eace49b117c82ef6aac4221788fb47991ab026fae14",
+  "test_splits": {
+    "fresh_msmarco": {
+      "source": "MS MARCO v1 queries.train.tsv and qrels.train.tsv; custom holdout",
+      "queries": 5000,
+      "file_sha256": {
+        "query_ids.json": "db6359b999d8b2ce7eda42dd2784ae9223ec7221e9336b8e7f343c1be7c21873",
+        "queries.json": "cdf4804fb3795931e974773d789567f47624f3aa7716432a5424c0e2cc4c5e38",
+        "qrels.json": "7bfc91d1d1daae5cad3d2e43471d6556c3272b706dcd59169b72279b194c58d2"
+      }
+    },
+    "historical_msmarco": {
+      "source": "MS MARCO v1 queries.train.tsv and qrels.train.tsv; custom holdout",
+      "queries": 5000,
+      "file_sha256": {
+        "query_ids.json": "6187fb7b369410370fa72ed1318fb390ffc6f5175cb98164fd59533c9727a80a",
+        "queries.json": "a52f18948d152b757d9eadc11c1729df25eeba3afe9383865c844133b3b40635",
+        "qrels.json": "8c23472cca96c7519137267b0cbe9a508bffe59746c031ff547ed756274f309d"
+      }
+    }
+  },
+  "beir_data_sha256": {
+    "nfcorpus": {
+      "corpus.jsonl": "10cc83ef1826b1425e6a87090b5140b39b27755d5a27e48215a88611c899991f",
+      "queries.jsonl": "d024e6621b84925d485ae473d316a0c3af31c62c8068a59fb29d22f7613aef2a",
+      "qrels/test.tsv": "f8fba6ef3d4dd9c3a242a8ba4ae38276fc3622fce7dcbae764766d564542fd2a"
+    },
+    "fiqa": {
+      "corpus.jsonl": "ff593e4df9933955dc3af83be0c3fa28ac7465f627e08c2e53593e734d506517",
+      "queries.jsonl": "eede1e61d4a0188940239b53ebc2da91f577a6a34679c812d1eb9090c29877bc",
+      "qrels/test.tsv": "6adc2a640dcdd22bb8b3858f89107adef2a7c3db20a63550dfa7a0f71e379e44"
+    },
+    "scifact": {
+      "corpus.jsonl": "dec31c8182f3d744c7d2c09423756fd1d17cbef75808db13ba01cc0aab4d1ac6",
+      "queries.jsonl": "8ff84a7c903f722981cd8d595c022660140c51867b27608a6d4910db86080313",
+      "qrels/test.tsv": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c"
+    },
+    "arguana": {
+      "corpus.jsonl": "0627982cec4ee896df6dc98604ef6b499c83fd87a19eaaeb3f23b88bbef6cbce",
+      "queries.jsonl": "f8b7c903f95d9a2d291de3915a8fac25085e9db679f19f59fea4145bfd1df618",
+      "qrels/test.tsv": "0c47b481fa8b47fb9ca5e74bc8a017bdea14518c0e4a5d21345291180b3aca76"
+    },
+    "scidocs": {
+      "corpus.jsonl": "328bb38854179c83ee40d4f49fae2ef7209ede7163785193cbdcd5906b28eecc",
+      "queries.jsonl": "3c85b68419bd579ff52edb58f9e7b32eb3d18bc83435edb71dbb68aaf79531d6",
+      "qrels/test.tsv": "dcd3d7f77417294bb6f338537f3c28d8a5ea72b30fe6633f407fa85528767e35"
+    },
+    "trec-covid": {
+      "corpus.jsonl": "aded69896598665082316d00df487d22212cc5a8611db05db34eb40d04ed00d7",
+      "queries.jsonl": "78f4b76bfef251a0baf37a6cea5c4ba8376cb4536c34635709aaa4a2783b208c",
+      "qrels/test.tsv": "10669ab7d526cb04f52079139fd88c3d467a0776441b046567f540582798982b"
+    }
+  },
+  "beir_sizes": {
+    "nfcorpus": {
+      "queries": 323,
+      "corpus": 3633
+    },
+    "fiqa": {
+      "queries": 648,
+      "corpus": 57638
+    },
+    "scifact": {
+      "queries": 300,
+      "corpus": 5183
+    },
+    "arguana": {
+      "queries": 1406,
+      "corpus": 8674
+    },
+    "scidocs": {
+      "queries": 1000,
+      "corpus": 25657
+    },
+    "trec-covid": {
+      "queries": 50,
+      "corpus": 171332
+    }
+  },
+  "checkpoint_sha256": {
+    "base": "5ba0032aefec27c763b2d9c8912eeec19529d4efdab9a71a9756e8056ba8f2e0",
+    "astra_rejected": "a3cedad6b0a9c3983ce4072ed427a874f466b994aebab7023f5e6f03f182974d",
+    "astra_rejected_random": "af9bf23039965efc97c2fee7d11b271efb17927d7f49f390e92ca774aaab9de4",
+    "astra_best_random": "bbccddcb39bb63ddd4f209d62aa0b46e066ee364320f804694147b28f9304906",
+    "fable_rejected": "c66ecfac4ce912681cfc617e8e0fc62ad348e8dd1e4b051b417b4547f1425fab",
+    "fable_rejected_random": "6dc7348218773f50721c1ad6f575068e64021dfe496e16002a672a80b31aa485",
+    "fable_best_random": "b46fd678f24b617ede2f33d70dce4aea7e9cdd33ff66c9474df76f3dd04217d8"
+  },
+  "selection": {
+    "submitted_astra": "base",
+    "submitted_fable": "base",
+    "supplemental_astra": "astra_rejected",
+    "supplemental_fable": "fable_rejected",
+    "status": "Candidates nominated after internal rejection, before their final scores were observed; primary decisions unchanged"
+  },
+  "available_artifacts": "Scores and protocol; direct checkpoint patches and portable search harness not included",
+  "test_reuse": "Previously evaluated benchmarks hidden from editors, not new untouched research-level confirmation",
+  "forward_budget": 50,
+  "python_budget": 300,
+  "turn_budget": 400,
+  "observed_python_calls": {
+    "astra": 37,
+    "fable": 116
+  },
+  "observed_edited_snapshots": {
+    "astra": 10,
+    "fable": 19
+  },
+  "recorded_runtime": {
+    "search_and_msmarco": "RTX 5090; sentence-transformers 5.1.2, transformers 4.57.1, numpy 2.4.6; native host CUDA PyTorch",
+    "beir": "RTX 4090; sentence-transformers 6.2.0, transformers 5.22.1, numpy 2.5.4"
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261112,
+    "unit": "paired queries within each fixed BEIR dataset, equal-dataset macro mean",
+    "limitations": "Unadjusted intervals conditional on one trajectory per editor and the fixed six datasets; not editor-run variability."
+  },
+  "source_reference": {
+    "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "logs": "https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math"
+  }
+}

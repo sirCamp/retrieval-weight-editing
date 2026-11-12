@@ -1,0 +1,6 @@
+# Install a CUDA-capable PyTorch build for your machine before the GPU benchmarks.
+torch>=2.7
+sentence-transformers==6.2.0
+transformers==5.22.1
+numpy==2.5.4
+pytrec-eval-terrier==0.5.11

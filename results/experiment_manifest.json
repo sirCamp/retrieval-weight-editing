@@ -1,0 +1,337 @@
+{
+  "base_model": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_dimension": 384
+  },
+  "msmarco": {
+    "source_archive_sha256": "decac356eb8cc5b9cea2e30b8738dc6f367e4147aaefe8fc7526ddda382fd2fc",
+    "search_corpus_sha256": "4334bde48e97a730731b7eace49b117c82ef6aac4221788fb47991ab026fae14",
+    "test_file_sha256": {
+      "query_ids.json": "6187fb7b369410370fa72ed1318fb390ffc6f5175cb98164fd59533c9727a80a",
+      "queries.json": "a52f18948d152b757d9eadc11c1729df25eeba3afe9383865c844133b3b40635",
+      "qrels.json": "8c23472cca96c7519137267b0cbe9a508bffe59746c031ff547ed756274f309d"
+    },
+    "original_checkpoints_sha256": {
+      "base": "5ba0032aefec27c763b2d9c8912eeec19529d4efdab9a71a9756e8056ba8f2e0",
+      "opus": "a254a2ec4b37d6bd1aa75b81dc09e6b5f677dc665367d9158c736853e956336a",
+      "astra": "0a9962383cf59281e3f8a68e28f976abc5c1f01a2448b898d4f5d2bf5681ed0c",
+      "ensemble": "5ba0032aefec27c763b2d9c8912eeec19529d4efdab9a71a9756e8056ba8f2e0",
+      "astra_random": "86e9a7f340b48db5dbc3ad529e519f9b146babbeab66cbb796077bedf95ad196",
+      "ensemble_random": "c33b6b1d5166ca2828f5242ef3023f85760f02cc64b524111abd8bf5d46c46dd",
+      "opus_random": "cb1200aa511065d9b4bd40d61a8e2a1d74b630d5f2e45621883b373b7b6734bc"
+    },
+    "matched_budget_checkpoints_sha256": {
+      "base": "5ba0032aefec27c763b2d9c8912eeec19529d4efdab9a71a9756e8056ba8f2e0",
+      "seed701_random": "f5f67384f468d0af475e442adf6aa80d61b96a6439fa2b208ba26a9cfd2da534",
+      "seed701_target": "9079da1b35ebc52ab2b940783fa994d101eb19a220ec6e85e2ae2c069377e355",
+      "seed702_random": "155682696d59cea8ce2279ff5b7547ccec77d0ddf77f856f9afe5297d43dded0",
+      "seed702_target": "412a056a6c8e2fe4f9af3cd8bcef58ecd6a23fb5ea4fcf464dd8d30c601865da",
+      "seed703_random": "933c752d411b22bf1f7ad830756a8c1e7c182d191575c2c312f4af7853e03ef0",
+      "seed703_target": "c0421f460c380124ca8e29e2e55902c34faabf81d7d0aa387e3f6b45e4ce7e23"
+    },
+    "selections": {
+      "701": {
+        "schedule": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "selected": {
+          "target": {
+            "name": "s701_r07_c3_target",
+            "checkpoint_sha256": "9079da1b35ebc52ab2b940783fa994d101eb19a220ec6e85e2ae2c069377e355"
+          },
+          "random": {
+            "name": "s701_r07_c2_random",
+            "checkpoint_sha256": "f5f67384f468d0af475e442adf6aa80d61b96a6439fa2b208ba26a9cfd2da534"
+          }
+        },
+        "decision_sha256": {
+          "rounds/r01/decision.json": "10ea67d077aa7103e96820575c00d738f5a9138f338467c709d7882a2c7464b3",
+          "rounds/r02/decision.json": "e2d5816b7e6d17aca66f9febbac5b74ebea6ff48b308659eae7898343280592d",
+          "rounds/r03/decision.json": "c546bf0e3077986a47e6f2465542b96779ee663b3a23acdd51e41359ec3eefae",
+          "rounds/r04/decision.json": "90dcb3d89e23b06fcb51ef4d8b22d74f22e847f405b5bec84acd2818552d108a",
+          "rounds/r05/decision.json": "b521e17107c4f8141f124cfe8bd4561d6ef09f702960ff23aa3ffd2edf6ef4f6",
+          "rounds/r06/decision.json": "19c0bb2932263450360febc734314d7efa19dbd93fb6d73ad488565081074860",
+          "rounds/r07/decision.json": "68d14c0ccb2dda33581bea552f6fde7e669aa28a86566ff2d00e7fb911f1c025"
+        },
+        "all24_target_and24_random_valid": true,
+        "final_test_labels_or_scores_read": false
+      },
+      "702": {
+        "schedule": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "selected": {
+          "target": {
+            "name": "s702_r04_c1_target",
+            "checkpoint_sha256": "412a056a6c8e2fe4f9af3cd8bcef58ecd6a23fb5ea4fcf464dd8d30c601865da"
+          },
+          "random": {
+            "name": "s702_r02_c4_random",
+            "checkpoint_sha256": "155682696d59cea8ce2279ff5b7547ccec77d0ddf77f856f9afe5297d43dded0"
+          }
+        },
+        "decision_sha256": {
+          "rounds/r01/decision.json": "3b927fc43ab2498774cc3413a29b7ea592e33bc5e39135e93d3906b5e2ac6f0b",
+          "rounds/r02/decision.json": "2d770522d2446954381c0a27e67cd84b25a6099368abc0758f3b1f1b945afe53",
+          "rounds/r03/decision.json": "b5055bbb6192221e1e3a4de8ca079c7c9af0f1f3178a930f674fd4961d5329d4",
+          "rounds/r04/decision.json": "e6a8d4ee5694cdb14091e42d4d3b21675931c230323e724b4aaf7e18777f0b8e",
+          "rounds/r05/decision.json": "37b194d56725c6ac50d24fd5cb37f1eb5e84b3817a5a0b620b1f431f215f664b",
+          "rounds/r06/decision.json": "2276b0f3b7ad85e0d94d3c52aac1f189598be73ded43db931d8e0dfcafe2717c",
+          "rounds/r07/decision.json": "7b0d6e999fd63a4c021cce29a2a42a166ff3046ea0e7c4603775be5b1276270c"
+        },
+        "all24_target_and24_random_valid": true,
+        "final_test_labels_or_scores_read": false
+      },
+      "703": {
+        "schedule": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "selected": {
+          "target": {
+            "name": "s703_r06_c1_target",
+            "checkpoint_sha256": "c0421f460c380124ca8e29e2e55902c34faabf81d7d0aa387e3f6b45e4ce7e23"
+          },
+          "random": {
+            "name": "s703_r07_c2_random",
+            "checkpoint_sha256": "933c752d411b22bf1f7ad830756a8c1e7c182d191575c2c312f4af7853e03ef0"
+          }
+        },
+        "decision_sha256": {
+          "rounds/r01/decision.json": "76cc96071f76df9b89ad8b579889e4f11e3a41360f1c7566417d825415e25345",
+          "rounds/r02/decision.json": "61927b1114033729a06c088a82454a9eb2e09f1d458e65d4571f3be2d5b3646e",
+          "rounds/r03/decision.json": "402d023d03aa53e77ca19d510bfbac03916fdadea9f32c3120fcca3ef1fbba21",
+          "rounds/r04/decision.json": "0c2b713aaf4091c0e48e7434a2859f99372e39b3282c08ea568e0a5b240b9908",
+          "rounds/r05/decision.json": "093ca67695acd4f657c05fa933dc5418527e91614153ce5562eaa958016bbc23",
+          "rounds/r06/decision.json": "2a127cb5727c0d023ddd7fcaeb78c1b798ef70f3dac5cf8fa1bbb15557abc7e8",
+          "rounds/r07/decision.json": "ddd7e436810071bdbdabc4b8adb95642fb9fde2069cb3ebe5de3a53f2ed620eb"
+        },
+        "all24_target_and24_random_valid": true,
+        "final_test_labels_or_scores_read": false
+      }
+    },
+    "original_runtime": {
+      "gpu": "Tesla V100",
+      "packages": [
+        "aiohappyeyeballs==2.7.1",
+        "aiohttp==3.14.5",
+        "aiosignal==1.4.0",
+        "anyio==4.16.0",
+        "attrs==26.1.0",
+        "certifi==2026.10.23",
+        "charset-normalizer==3.5.2",
+        "cloudpickle==3.1.2",
+        "datasets==5.0.1",
+        "dill==0.4.1",
+        "filelock==4.2.4",
+        "frozenlist==1.8.0",
+        "fsspec==2026.6.0",
+        "h11==0.16.0",
+        "hf-xet==1.8.0",
+        "httpcore==1.0.9",
+        "httpx==0.28.1",
+        "huggingface-hub==0.36.2",
+        "idna==3.20",
+        "jinja2==3.1.6",
+        "joblib==1.6.0",
+        "markupsafe==3.0.3",
+        "mpmath==1.3.0",
+        "multidict==7.2.1",
+        "multiprocess==0.70.19",
+        "narwhals==2.28.0",
+        "networkx==3.6.1",
+        "numpy==2.4.6",
+        "nvidia-cublas-cu12==12.6.4.1",
+        "nvidia-cuda-cupti-cu12==12.6.80",
+        "nvidia-cuda-nvrtc-cu12==12.6.77",
+        "nvidia-cuda-runtime-cu12==12.6.77",
+        "nvidia-cudnn-cu12==9.5.1.17",
+        "nvidia-cufft-cu12==11.3.0.4",
+        "nvidia-cufile-cu12==1.11.1.6",
+        "nvidia-curand-cu12==10.3.7.77",
+        "nvidia-cusolver-cu12==11.7.1.2",
+        "nvidia-cusparse-cu12==12.5.4.2",
+        "nvidia-cusparselt-cu12==0.6.3",
+        "nvidia-nccl-cu12==2.26.2",
+        "nvidia-nvjitlink-cu12==12.6.85",
+        "nvidia-nvtx-cu12==12.6.77",
+        "packaging==26.3",
+        "pandas==3.1.1",
+        "pillow==13.0.0",
+        "propcache==0.5.4",
+        "pyarrow==26.0.1",
+        "python-dateutil==4.0.0",
+        "pyyaml==6.0.3",
+        "regex==2026.9.29",
+        "requests==2.34.2",
+        "safetensors==0.8.0",
+        "scikit-learn==1.9.1",
+        "scipy==1.17.1",
+        "sentence-transformers==5.1.2",
+        "setuptools==78.1.0",
+        "sympy==1.14.0",
+        "threadpoolctl==3.7.0",
+        "tokenizers==0.22.2",
+        "torch==2.7.1+cu126",
+        "tqdm==4.70.1",
+        "transformers==4.57.1",
+        "triton==3.3.1",
+        "typing-extensions==4.16.0",
+        "tzdata==2026.6",
+        "urllib3==2.8.0",
+        "xxhash==4.0.2",
+        "yarl==1.25.1"
+      ]
+    },
+    "matched_budget_final_runtime": {
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "packages": {
+        "torch": "2.15.0",
+        "sentence-transformers": "5.1.2",
+        "transformers": "4.57.1",
+        "numpy": "2.4.6"
+      }
+    },
+    "runtime_transfer_feedback_audit": {
+      "base": {
+        "old": {
+          "p1": 0.68,
+          "mrr10": 0.7802053571428571,
+          "ndcg10": 0.8200927277621061,
+          "recall100": 0.9883333333333334
+        },
+        "new": {
+          "p1": 0.68,
+          "mrr10": 0.7802053571428571,
+          "ndcg10": 0.8200249017753899,
+          "recall100": 0.9883333333333334
+        },
+        "delta": {
+          "p1": 0.0,
+          "mrr10": 0.0,
+          "ndcg10": -6.782598671617457e-05,
+          "recall100": 0.0
+        }
+      },
+      "s702_r02_c3_target": {
+        "old": {
+          "p1": 0.68,
+          "mrr10": 0.7802603174603174,
+          "ndcg10": 0.8200326204575517,
+          "recall100": 0.9883333333333334
+        },
+        "new": {
+          "p1": 0.68,
+          "mrr10": 0.7803609126984127,
+          "ndcg10": 0.8202207488199477,
+          "recall100": 0.9883333333333334
+        },
+        "delta": {
+          "p1": 0.0,
+          "mrr10": 0.00010059523809524684,
+          "ndcg10": 0.00018812836239601172,
+          "recall100": 0.0
+        }
+      },
+      "s702_r02_c4_random": {
+        "old": {
+          "p1": 0.68,
+          "mrr10": 0.7802797619047619,
+          "ndcg10": 0.8201492584106181,
+          "recall100": 0.9883333333333334
+        },
+        "new": {
+          "p1": 0.68,
+          "mrr10": 0.7801803571428572,
+          "ndcg10": 0.8200029898999706,
+          "recall100": 0.9883333333333334
+        },
+        "delta": {
+          "p1": 0.0,
+          "mrr10": -9.940476190473113e-05,
+          "ndcg10": -0.00014626851064758473,
+          "recall100": 0.0
+        }
+      }
+    },
+    "collection_tsv_sha256": "86e0c5820be6b22280337a67e54cbb626645453d9ac3c377bac45abb81c5653d"
+  },
+  "beir": {
+    "datasets": {
+      "nfcorpus": {
+        "corpus_rows": 3633,
+        "corpus_sha256": "10cc83ef1826b1425e6a87090b5140b39b27755d5a27e48215a88611c899991f",
+        "queries_sha256": "d024e6621b84925d485ae473d316a0c3af31c62c8068a59fb29d22f7613aef2a",
+        "qrels_sha256": "f8fba6ef3d4dd9c3a242a8ba4ae38276fc3622fce7dcbae764766d564542fd2a"
+      },
+      "fiqa": {
+        "corpus_rows": 57638,
+        "corpus_sha256": "ff593e4df9933955dc3af83be0c3fa28ac7465f627e08c2e53593e734d506517",
+        "queries_sha256": "eede1e61d4a0188940239b53ebc2da91f577a6a34679c812d1eb9090c29877bc",
+        "qrels_sha256": "6adc2a640dcdd22bb8b3858f89107adef2a7c3db20a63550dfa7a0f71e379e44"
+      },
+      "scifact": {
+        "corpus_rows": 5183,
+        "corpus_sha256": "dec31c8182f3d744c7d2c09423756fd1d17cbef75808db13ba01cc0aab4d1ac6",
+        "queries_sha256": "8ff84a7c903f722981cd8d595c022660140c51867b27608a6d4910db86080313",
+        "qrels_sha256": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c"
+      },
+      "arguana": {
+        "corpus_rows": 8674,
+        "corpus_sha256": "0627982cec4ee896df6dc98604ef6b499c83fd87a19eaaeb3f23b88bbef6cbce",
+        "queries_sha256": "f8b7c903f95d9a2d291de3915a8fac25085e9db679f19f59fea4145bfd1df618",
+        "qrels_sha256": "0c47b481fa8b47fb9ca5e74bc8a017bdea14518c0e4a5d21345291180b3aca76"
+      },
+      "scidocs": {
+        "corpus_rows": 25657,
+        "corpus_sha256": "328bb38854179c83ee40d4f49fae2ef7209ede7163785193cbdcd5906b28eecc",
+        "queries_sha256": "3c85b68419bd579ff52edb58f9e7b32eb3d18bc83435edb71dbb68aaf79531d6",
+        "qrels_sha256": "dcd3d7f77417294bb6f338537f3c28d8a5ea72b30fe6633f407fa85528767e35"
+      },
+      "trec-covid": {
+        "corpus_rows": 171332,
+        "corpus_sha256": "aded69896598665082316d00df487d22212cc5a8611db05db34eb40d04ed00d7",
+        "queries_sha256": "78f4b76bfef251a0baf37a6cea5c4ba8376cb4536c34635709aaa4a2783b208c",
+        "qrels_sha256": "10669ab7d526cb04f52079139fd88c3d467a0776441b046567f540582798982b"
+      }
+    },
+    "checkpoint_sha256": {
+      "base": "5ba0032aefec27c763b2d9c8912eeec19529d4efdab9a71a9756e8056ba8f2e0",
+      "seed701_random": "f5f67384f468d0af475e442adf6aa80d61b96a6439fa2b208ba26a9cfd2da534",
+      "seed701_target": "9079da1b35ebc52ab2b940783fa994d101eb19a220ec6e85e2ae2c069377e355",
+      "seed702_random": "155682696d59cea8ce2279ff5b7547ccec77d0ddf77f856f9afe5297d43dded0",
+      "seed702_target": "412a056a6c8e2fe4f9af3cd8bcef58ecd6a23fb5ea4fcf464dd8d30c601865da",
+      "seed703_random": "933c752d411b22bf1f7ad830756a8c1e7c182d191575c2c312f4af7853e03ef0",
+      "seed703_target": "c0421f460c380124ca8e29e2e55902c34faabf81d7d0aa387e3f6b45e4ce7e23"
+    },
+    "runtime": {
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "packages": {
+        "torch": "2.15.0",
+        "sentence-transformers": "6.2.0",
+        "transformers": "5.22.1",
+        "numpy": "2.5.4",
+        "pytrec-eval-terrier": "0.5.11"
+      }
+    },
+    "primary_metric": "equal-dataset macro nDCG@10"
+  }
+}

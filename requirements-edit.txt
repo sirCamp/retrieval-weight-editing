@@ -1,0 +1,9 @@
+# Matches the search-side text/solver libraries. Use a PyTorch build for your GPU.
+torch>=2.7
+sentence-transformers==5.1.2
+transformers==4.57.1
+numpy==2.4.6
+scipy==1.17.1
+datasets==5.0.1
+huggingface-hub==0.36.2
+tokenizers==0.22.2

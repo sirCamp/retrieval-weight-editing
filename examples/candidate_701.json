@@ -1,0 +1,19 @@
+{
+  "reference": "base",
+  "layer": 5,
+  "rank": 32,
+  "eta": 0.2,
+  "ridge": 0.003,
+  "mechanism": "contrastive_margin",
+  "competitors": 1,
+  "competitor_push": 0.5,
+  "weighting": "near_miss",
+  "query_anchor": 1,
+  "solved_anchor": 2,
+  "fit_queries": 10000,
+  "side": "document",
+  "target_centering": "none",
+  "holdout_gate": true,
+  "holdout_partition": "nested10k",
+  "row_objective": "paired_document"
+}
